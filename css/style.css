@@ -21,7 +21,8 @@ margin: 0 auto;
 main{
 background-color: aliceblue;
 min-height: 700px;
-
+padding-top: 2em;
+box-shadow: 0 0 8px black;
 
 }
 
@@ -82,6 +83,7 @@ footer{
 background-color: #090040;
 color: white;
 padding: 1.2em;
+margin-top: 2em;
 
 }
 
@@ -91,3 +93,56 @@ justify-content: center;
 font-size: 1.4em;
 
 }
+
+h2{
+
+    text-align: center;
+margin-bottom: 1em;
+font-size: 1.4em;
+
+
+}
+
+.section_jobs{
+padding: 1em;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 4px black;
+    text-align: center;
+
+}
+
+.ul_jobs {
+list-style: none;
+text-align: left;
+display: inline-block;
+
+
+
+}
+
+.ul_jobs li {
+padding-bottom: 1em;
+
+}
+
+.about_section {
+   background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 4px black;
+    margin-top: 2em;
+ padding: 1em;
+
+
+
+}
+
+.about_p {
+display: flex;
+justify-content: center;
+}
+
+.about-p{
+
+    display: flex;
+justify-content: center;
+}
+

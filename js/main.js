@@ -25,7 +25,7 @@ function loadJobs() {
 
  jobs.forEach(job => {
  let liEl = document.createElement("li")
- let jobinfoEl = document.createTextNode(`jobbade hos: ${job.companyname} som: ${job.jobtitle} i stad: ${job.location} `)
+ let jobinfoEl = document.createTextNode(`Jobbade hos ${job.companyname} som ${job.jobtitle} i staden ${job.location}. `)
 
  joblistEl.appendChild(liEl)
 liEl.appendChild(jobinfoEl)
