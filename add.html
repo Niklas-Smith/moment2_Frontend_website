@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/main.js"></script>
+    <script src="js/main.js" defer></script>
 </head>
 <body>
   <div class="container">
@@ -22,9 +22,25 @@
 </ul>
 </nav>
 </header>
+<!--Header with a logo and same navigations link -->
 <main>
 
-
+  <form id="addJobb">
+<label for="companyname">Companyname</label>
+<br>
+<input type="text" id="companyname" name="companyname">
+<br>
+<label for="jobtitle">Jobbtitle</label>
+<br>
+<input type="text" id="jobtitle" name="jobtitle">
+<br>
+<label for="location">Location</label>
+<br>
+<input type="text" id="location" name="location">
+<br>
+<button type="submit">lägg till jobb:</button>
+</form>
+<!--Form to submit my jobs to table on index.html -->
 
 
 </main>
@@ -37,7 +53,7 @@ Kurskod: dt207g
 </p>
 
 </footer>
-
+<!--Footer with a p tag -->
 
 </div>
 </body>

@@ -2,7 +2,7 @@
 margin: 0;
 
 }
-
+ /* Give all mrgin 0 */
 body{
 font-family: Verdana, Geneva, Tahoma, sans-serif;
 font-size: 1.1em;
@@ -10,14 +10,14 @@ line-height: 1.6em;
 background-color: beige;
 }
 
-
+ /* Give body font-family,font-size,line-height */
 .container{
 max-width: 1600px;
 margin: 0 auto;
 
 
 }
-
+ /*Make site max-with 1600px and put in middle of screen*/
 main{
 background-color: aliceblue;
 min-height: 700px;
@@ -25,7 +25,7 @@ padding-top: 2em;
 box-shadow: 0 0 8px black;
 
 }
-
+ /*give main background-colr , min-height same padding and box-shadow*/
 
 header{
 
@@ -33,7 +33,7 @@ header{
 color: white;
 padding: 1.2em;
 }
-
+ /*Give header color and background-color*/
 
 .main_nav{
 list-style-type: none;
@@ -41,10 +41,9 @@ display: flex;
 justify-content: center;
 
 }
-
+ /*Give main_nav display flex and just-conten and remove list-style*/
 ul li {
 margin-right: 1.5em;
-
 
 
 }
@@ -56,18 +55,18 @@ font-size: 1.3em;
 text-decoration: none;
 
 }
-
+/*Give ul li a color and remove text-decration*/
 .logo{
 text-decoration: none;
 
 }
-
-
+/*Give.logo remove text-decration*/
 .navigation{
 display: flex;
 justify-content: center;
 
 }
+/*give navigation display flex and justify-content*/
 
 h1{
 display: flex;
@@ -78,7 +77,7 @@ padding-top: 1em;
 font-size: 2em;
 
 }
-
+/*give h1 display flex and justify-content with same margin,color and padding*/
 footer{
 background-color: #090040;
 color: white;
@@ -86,7 +85,7 @@ padding: 1.2em;
 margin-top: 2em;
 
 }
-
+/*give footer color and background-color with same padding and margin*/
 .p_footer{
 display: flex;
 justify-content: center;
@@ -94,6 +93,7 @@ font-size: 1.4em;
 
 }
 
+/*give p_footer display flex and justify-content*/
 h2{
 
     text-align: center;
@@ -102,7 +102,7 @@ font-size: 1.4em;
 
 
 }
-
+/*give h2 text-align center with same maring-bottom*/
 .section_jobs{
 padding: 1em;
     background-color: rgb(255, 255, 255);
@@ -110,7 +110,7 @@ padding: 1em;
     text-align: center;
 
 }
-
+/*give .section_jobs background-color and box-shadow with tex-aling center*/
 .ul_jobs {
 list-style: none;
 text-align: left;
@@ -119,7 +119,7 @@ display: inline-block;
 
 
 }
-
+/*give .ul_jobs display inline-block and remove list-stle with text-align left*/
 .ul_jobs li {
 padding-bottom: 1em;
 
@@ -134,15 +134,47 @@ padding-bottom: 1em;
 
 
 }
-
+/*give .about_section background-color and box-shadow with same padding and margin*/
 .about_p {
 display: flex;
 justify-content: center;
 }
-
+/*give .about_p  display flex and justify-content*/
 .about-p{
 
     display: flex;
 justify-content: center;
 }
+/*give .about-p  display flex and justify-content*/
 
+input[type=text] {
+width: 70%;
+padding: 0.7em;
+margin-top: 0.4em;
+margin-bottom: 0.8em;
+border: 1px #090040 solid;  
+
+}
+
+/*give input[type=text] width with border and same maring and padding*/
+
+input[type=submit] {
+background-color: #1a3a00;
+color: white;
+margin-top: 1em;
+padding: 2em;
+border-radius: 20%;
+
+}
+/*give input[type=submit] background-color,color with same margin and padding*/
+
+form{
+border: 1px #090040 solid;
+   background-color: rgb(255, 255, 255);
+width: 80%;
+margin: auto;
+text-align: center;
+padding: 1em;
+}
+
+/*give formm border,background-color,width and text-align. with same margin and padding*/
