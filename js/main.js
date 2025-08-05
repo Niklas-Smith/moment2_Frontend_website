@@ -1,23 +1,27 @@
-
+//skapar varible med en tom array 
 let jobinfoapi = [] 
-
+//skapar variabler 
  let joblistEl = document.querySelector(".ul_jobs");
 let addJobForm = document.getElementById("addJobb");
 
 
 
+//när sidan laddar kör function init
 window.onload = init; 
+
 function init() {
+    //när sidan läser in anropa function getJobs()
 getJobs();
+//om carslist finns anropa function createWork()
 if (addJobForm) {
 
 addJobForm.addEventListener("submit", createWork)
 }
 
 
-
  } 
 
+//function som hämtar data från http://127.0.0.1:3000/api/jobs och lagra i tom array jobinfoapi
 async function getJobs()  {
     const resp = await fetch("http://127.0.0.1:3000/api/jobs")
 
@@ -31,6 +35,18 @@ async function getJobs()  {
 
 }
 
+
+/*function som skrivar ut data från jobinfoapi och skapar en knapp med id i en lista och loppar igenom alla entries som finns.
+Detta blir:
+<section class="section_jobs">
+<ul class="ul_jobs">
+<li> Jobbade hos ${jobb.companyname} som ${jobb.jobtitle} i staden ${jobb.location}. 
+<button id="jobb.id">ta bort</button>
+</li>
+
+</ul>
+</section>
+*/
 function loadJobs() {
     let jobs = jobinfoapi
 
@@ -62,7 +78,7 @@ liEl.appendChild(removeButton)
 
 
 
-
+//function som gör att man kan lagra ett nytt jobb i en lista  ett post begären till ett api
 async function createWork(event) {
     
  // gör att form inte ladda om sida
@@ -115,7 +131,7 @@ if(resp.ok) {
 
 
 }
-
+//function som gör att man kan ta bort ett jobb i listen me ett DELETE begäran till ett api (som target id)
 async function removeJob(event) {
   const removeId = event.target.id
     
